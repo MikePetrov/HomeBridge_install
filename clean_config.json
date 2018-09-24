@@ -9,8 +9,8 @@
 	],
 	"platforms": [
 		{
-			"platform": "config",
-			"name": "Config",
+			"platform": "configurator",
+			"name": "WebInterface",
 			"port": 8080,
 			"sudo": true,
 			"temp": "/sys/class/thermal/thermal_zone0/temp",
