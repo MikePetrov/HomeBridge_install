@@ -1,6 +1,6 @@
 # HomeBridge_install
 
-Автоматизация развертывания 'HomeBridge' являющегося мостом между датчиками куплеными на AlliExpress и устройствами на платформе Apple IOS
+Автоматизация развертывания <a href="https://github.com/nfarina/homebridge">'HomeBridge'</a> являющегося мостом между датчиками куплеными на AlliExpress и устройствами на платформе Apple IOS
 
 * Отключаем SWAP, для продления жизни флешки
 * удаляем не нужные пакеты
@@ -13,6 +13,6 @@
 * Создаем `homebridge.service` и запускаем его
 
 Если лень изобретать велосипед(писать свои модули), 
-то его можно поискать в репозитории: https://www.npmjs.com/search?q=homebridge
+то его можно поискать в репозитории: <a href="https://www.npmjs.com/search?q=homebridge">'npmjs'</a>
 
 доступ к веб-морде homebridge по адресу http://local.ip.homebridge:8080.
