@@ -21,9 +21,9 @@ sudo cp homebridge.service /etc/systemd/system/
 # установка HomeBridge и Web Interface
 sudo npm i -g --unsafe-perm homebridge homebridge-config-ui-x
 # установка модулей home bridge (не нужное коментируем, здесь и в файле example.config.json)
-## web
-sudo npm i -g --unsafe-perm 
 ## ip камеры
+sudo npm i -g --unsafe-perm homebridge-camera-ffmpeg
+## 
 ## 
 
 # запуск в качестве демона
