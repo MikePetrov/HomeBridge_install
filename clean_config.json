@@ -22,7 +22,7 @@
 		}
 	]
 	{
-  	"platform": "Camera-ffmpeg",
+  	"platform": "Камеры",
  		 "cameras": [
     				{
      			 "name": "Camera_Name1",
@@ -34,8 +34,8 @@
       					"maxHeight": 720,
       					"maxFPS": 30
      					 }
-   				 }
-				{
+#   				 }
+#				{
      			 "name": "Camera_Name2",
       				"videoConfig": {
       					"source": "-re -i rtsp://myfancy_rtsp_stream",
