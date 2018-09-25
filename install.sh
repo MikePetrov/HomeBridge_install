@@ -15,7 +15,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs libavahi-compat-libdnssd-dev
 
 # копирование файлов конфигурации 
-mkdir ~/.homebridge && cp config.json ~/.homebridge
+mkdir ~/.homebridge && cp https://github.com/MikePetrov/HomeBridge_install/blob/master/clean_config.json ~/.homebridge/config.json
 sudo cp homebridge.service /etc/systemd/system/
 
 # установка модулей home bridge
