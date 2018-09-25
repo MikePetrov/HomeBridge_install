@@ -18,9 +18,11 @@ sudo apt install -y nodejs libavahi-compat-libdnssd-dev
 mkdir ~/.homebridge && cp https://github.com/MikePetrov/HomeBridge_install/blob/master/clean_config.json ~/.homebridge/config.json
 sudo cp homebridge.service /etc/systemd/system/
 
-# установка модулей home bridge
-## web
+# установка HomeBridge и Web Interface
 sudo npm i -g --unsafe-perm homebridge homebridge-config-ui-x
+# установка модулей home bridge (не нужное коментируем, здесь и в файле example.config.json)
+## web
+sudo npm i -g --unsafe-perm 
 ## ip камеры
 ## 
 
