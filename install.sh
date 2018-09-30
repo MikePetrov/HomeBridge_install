@@ -15,11 +15,13 @@ sudo apt autoremove --purge
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
 # установка не достающих пакетов
-sudo apt install -y nodejs libavahi-compat-libdnssd-dev
+sudo apt install -y nodejs libavahi-compat-libdnssd-dev mc
 
 # копирование файлов конфигурации 
-mkdir ~/.homebridge && cp https://mikepetrov.github.io/HomeBridge_install/clean_config.json ~/.homebridge/config.json
-sudo cp homebridge.service /etc/systemd/system/
+mkdir ~/.homebridge
+wget -P ~/.homebridge https://mikepetrov.github.io/HomeBridge_install/default_config.json
+mv ~/.homebridge/default_config.json ~/.homebridge/config.json
+sudo wget -P /etc/systemd/system/ https://mikepetrov.github.io/HomeBridge_install/homebridge.service 
 
 # установка HomeBridge и Web Interface
 sudo npm i -g --unsafe-perm homebridge homebridge-config-ui-x
