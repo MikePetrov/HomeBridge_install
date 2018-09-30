@@ -5,7 +5,6 @@ oldname=$(cat /etc/hostname)
 sudo sed -i "s/$oldname/HomeBridge/g" /etc/hosts
 sudo sed -i "s/$oldname/HomeBridge/g" /etc/hostname
 
-
 # отключение swap файла
 sudo dphys-swapfile swapoff
 sudo dphys-swapfile uninstall
