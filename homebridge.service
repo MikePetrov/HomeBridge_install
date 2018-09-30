@@ -1,7 +1,7 @@
 [Unit]
 Description=Node.js Apple HomeKit Server 
 After=syslog.target network-online.target
-Documentation=
+Documentation=https://mikepetrov.github.io/HomeBridge_install
 
 [Service]
 Type=simple
