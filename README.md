@@ -1,8 +1,11 @@
 # HomeBridge_install
 
-HomeBridge_install/install.sh
-
 Автоматизация развертывания <a href="https://github.com/nfarina/homebridge">'HomeBridge'</a> являющегося мостом между датчиками куплеными на AlliExpress и устройствами на платформе Apple IOS
+
+copy&paste for EXEC :
++++++++
+wget -O - https://github.com/MikePetrov/HomeBridge_install/master/install.sh | bash
++++++++
 
 * Отключаем SWAP, для продления жизни флешки
 * удаляем не нужные пакеты
