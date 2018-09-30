@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# смена hostname
-sudo hostname HomeBridge
+# смена hostname на HomeBridge
+oldname=$(cat /etc/hostname)
+sudo sed -i "s/$oldname/HomeBridge/g" /etc/hosts
+sudo sed -i "s/$oldname/HomeBridge/g" /etc/hostname
+
 
 # отключение swap файла
 sudo dphys-swapfile swapoff
