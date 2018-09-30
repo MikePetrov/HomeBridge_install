@@ -1,4 +1,6 @@
 #!/bin/bash
+set -o nounset
+set -o errexit
 
 # смена hostname на HomeBridge
 oldname=$(cat /etc/hostname)
@@ -14,12 +16,12 @@ sudo update-rc.d dphys-swapfile remove
 sudo apt autoremove --purge
 
 # установка не достающих пакетов
-sudo apt install -y libavahi-compat-libdnssd-dev mc
+sudo apt install -y libavahi-compat-libdnssd-dev mc xz-utils
 
 # устанавливаем NodeJs-current (актуальная сейчас)
 cd ~
 wget https://nodejs.org/dist/v10.11.0/node-v10.11.0-linux-armv6l.tar.xz
-tar -xzf ~/node-v10.11.0-linux-armv6l.tar.xz
+tar -xvJf ~/node-v10.11.0-linux-armv6l.tar.xz
 ~/node-v10.11.0-linux-armv6l/bin/node -v
 cd ~/node-v10.11.0-linux-armv6l
 sudo cp -R * /usr/local/
