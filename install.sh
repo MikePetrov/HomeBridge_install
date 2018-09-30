@@ -22,12 +22,15 @@ sudo apt install -y libavahi-compat-libdnssd-dev mc xz-utils
 cd ~
 wget https://nodejs.org/dist/v10.11.0/node-v10.11.0-linux-armv6l.tar.xz
 tar -xvJf ~/node-v10.11.0-linux-armv6l.tar.xz
-~/node-v10.11.0-linux-armv6l/bin/node -v
+ver=$(~/node-v10.11.0-linux-armv6l/bin/node -v)
+echo "Unpacking version: $ver"
 cd ~/node-v10.11.0-linux-armv6l
 sudo cp -R * /usr/local/
 export PATH=$PATH:/usr/local/bin
-node -v
-npm -v
+ver=$(node -v)
+echo "System version NodeJS: $ver"
+ver=$(npm -v)
+echo "System version NPM: $ver"
 
 # копирование файлов конфигурации 
 mkdir ~/.homebridge
