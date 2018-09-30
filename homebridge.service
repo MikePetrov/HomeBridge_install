@@ -1,6 +1,7 @@
 [Unit]
 Description=Node.js Apple HomeKit Server 
 After=syslog.target network-online.target
+Documentation=
 
 [Service]
 Type=simple
