@@ -6,7 +6,7 @@ Documentation=https://mikepetrov.github.io/HomeBridge_install
 [Service]
 Type=simple
 User=pi
-ExecStart=/usr/bin/homebridge -I
+ExecStart=/usr/local/bin/homebridge -I
 Restart=on-failure
 RestartSec=5
 KillMode=process
