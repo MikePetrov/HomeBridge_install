@@ -14,11 +14,19 @@ sudo update-rc.d dphys-swapfile remove
 # удаление не нужных пакетов
 sudo apt autoremove --purge
 
-# добавление репозитория NodeJs
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-
 # установка не достающих пакетов
-sudo apt install -y nodejs libavahi-compat-libdnssd-dev mc
+sudo apt install -y libavahi-compat-libdnssd-dev mc
+
+# устанавливаем NodeJs-current (актуальная сейчас)
+cd ~
+wget https://nodejs.org/dist/v10.11.0/node-v10.11.0-linux-armv6l.tar.xz
+tar -xzf node-v10.11.0-linux-armv6l
+node-v10.11.0-linux-armv6l/bin/node -v
+cd node-v10.11.0-linux-armv6l
+sudo cp -R * /usr/local/
+export PATH=$PATH:/usr/local/bin
+node -v
+npm -v
 
 # копирование файлов конфигурации 
 mkdir ~/.homebridge
