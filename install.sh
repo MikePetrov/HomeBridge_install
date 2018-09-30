@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# смена hostname
+sudo hostname HomeBridge
+
 # отключение swap файла
 sudo dphys-swapfile swapoff
 sudo dphys-swapfile uninstall
@@ -15,7 +18,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs libavahi-compat-libdnssd-dev
 
 # копирование файлов конфигурации 
-mkdir ~/.homebridge && cp https://github.com/MikePetrov/HomeBridge_install/blob/master/clean_config.json ~/.homebridge/config.json
+mkdir ~/.homebridge && cp https://mikepetrov.github.io/HomeBridge_install/clean_config.json ~/.homebridge/config.json
 sudo cp homebridge.service /etc/systemd/system/
 
 # установка HomeBridge и Web Interface
@@ -30,3 +33,6 @@ sudo npm i -g --unsafe-perm homebridge-camera-ffmpeg
 sudo systemctl daemon-reload
 sudo systemctl enable homebridge
 sudo systemctl start homebridge
+
+# перезагрузка
+sudo shutdown -r
