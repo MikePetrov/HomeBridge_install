@@ -1,6 +1,6 @@
 # HomeBridge_install
 
-    wget -O - https://github.com/MikePetrov/HomeBridge_install/master/install.sh | bash
+    wget -O - https://mikepetrov.github.io/HomeBridge_install/install.sh | bash
     
 ***Автоматизация развертывания <a href="https://github.com/nfarina/homebridge">'HomeBridge'</a> являющегося мостом между датчиками куплеными на AlliExpress и устройствами на платформе Apple IOS***
 
