@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 set -o nounset
 set -o errexit
 
@@ -33,7 +33,7 @@ ver=$(npm -v)
 echo "System version NPM: $ver"
 
 # копирование файлов конфигурации 
-mkdir ~/.homebridge
+mkdir -p ~/.homebridge
 wget -P ~/.homebridge https://mikepetrov.github.io/HomeBridge_install/default_config.json
 mv ~/.homebridge/default_config.json ~/.homebridge/config.json
 sudo wget -P /etc/systemd/system/ https://mikepetrov.github.io/HomeBridge_install/homebridge.service 
