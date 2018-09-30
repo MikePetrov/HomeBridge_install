@@ -19,7 +19,7 @@ sudo apt install -y libavahi-compat-libdnssd-dev mc
 # устанавливаем NodeJs-current (актуальная сейчас)
 cd ~
 wget https://nodejs.org/dist/v10.11.0/node-v10.11.0-linux-armv6l.tar.xz
-tar -xzf node-v10.11.0-linux-armv6l
+tar -xzf node-v10.11.0-linux-armv6l.tar.xz
 node-v10.11.0-linux-armv6l/bin/node -v
 cd node-v10.11.0-linux-armv6l
 sudo cp -R * /usr/local/
